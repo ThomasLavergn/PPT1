@@ -2,6 +2,10 @@ body
 {
 	margin:0;
 }
+@font-face {
+	font-family: "MyFont";
+	src: url('./font/traveling_typewriter/TravelingTypewriter.ttf');
+}
 
 #top img
 {
@@ -74,6 +78,9 @@ body
 	position: relative;
 }
 
+#contenu h3 {
+	font-family: "MyFont";
+}
 
 #contenu .intro
 {
