@@ -2,6 +2,10 @@ body
 {
 	margin:0;
 }
+@font-face {
+	font-family: "MyFont";
+	src: url('./font/traveling_typewriter/TravelingTypewriter.ttf');
+}
 
 #top img
 {
@@ -13,8 +17,6 @@ body
 #top
 {
 	color: white;
-	text-shadow: 2px 3px gray;
-	float: center;
 }
 
 #top h1
@@ -31,8 +33,9 @@ body
 	position: absolute;
 	width:40%;
 	top:40px;
-	left : 45%;
+	left : 55%;
 	text-decoration: none;
+    text-shadow: 2px 3px gray;
 }
 
  #menu ul
@@ -42,12 +45,13 @@ body
 	margin-left:0%;
 }
 
-#menu li
+#menu > li
 {
- 	font-size: 1.9em;
+    font-size: 23px;
  	margin-left:3%;
  	list-style-type:none;
  	float:left;
+    display: block;
 }
 
 #menu a
@@ -57,11 +61,19 @@ body
 	text-decoration:none;
 }
 
-#menu li a:hover
-{
-	padding: 8%;
-	border-radius: 10px;
-	background-color: grey;
+#menu li:hover .SousM{
+    display: block;
+    width: 100px;
+}
+
+.SousM{
+    display: none;
+    text-shadow: none;
+}
+
+.SousM li{
+    font-size: 18px;
+    list-style-type:none;
 }
 
 #contenu
@@ -73,7 +85,6 @@ body
 	font-size: 20px;
 	position: relative;
 }
-
 
 #contenu .intro
 {
@@ -87,13 +98,23 @@ body
 	padding-bottom: 2%;
 }
 
+#rep {
+	margin-left: 25%;
+}
+
 #contenu li{
 	margin-top: 1%;
 }
 
 #vids
 {
-	padding-left: 25%;
+	margin-bottom: 2%;
+}
+
+#vids iframe{
+    max-width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
 }
 
 #footer img
@@ -110,20 +131,18 @@ body
 {
 	filter: opacity(100%);
 }
-.l-g
-{
-	float : left;
-	width: 40%;
-	box-shadow: 0px 0px 3px grey;
+
+#mosaique div{
+    width: 240px;
 }
 
-.l-d
-{
-	float : right;
-	width : 40%;
-	box-shadow: 0px 0px 3px grey;
+#mosaique img {
+    width: 100%;
+    position: relative;
 }
 
-h3{
-	text-align: center;
+#mosaique span {
+    display: none;
 }
+
+#mosaique span {}
