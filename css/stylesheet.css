@@ -1,0 +1,112 @@
+body
+{
+	margin:0;
+}
+@font-face {
+	font-family: "MyFont";
+	src: url('./font/traveling_typewriter/TravelingTypewriter.ttf');
+}
+
+#top img
+{
+	width: 100%;
+	height: 750px;
+	filter: brightness(50%);
+}
+
+#top
+{
+	color: white;
+}
+
+#top h1
+{
+	position: absolute;
+	top: 500px;
+	left : 20%;
+	font-size: 3em;
+	text-shadow: 2px 4px black;
+}
+
+#menu
+{
+	position: absolute;
+	width:35%;
+	top:40px;
+	left : 65%;
+	text-decoration: none;
+}
+
+#menu ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    text-align:center;
+}
+#menu li {
+    font-size: 23px;
+    list-style-type:none;
+    float:left;
+    margin:1%;
+    padding:0;
+}
+#menu li :hover{
+    border-bottom: 2px solid gray;
+}
+
+
+#menu li a {
+    display:block;
+    width:100px;
+    color:white;
+    text-decoration:none;
+    padding:5px;
+}
+
+
+#menu ul li ul {
+    display:none;
+}
+
+#menu ul li:hover ul {
+    display:block;
+    border-bottom: none;
+}
+#menu li:hover ul li {
+    float:none;
+}
+
+#menu li ul {
+    position:absolute;
+}
+
+#menu ul li ul li {
+    font-size: 18px;
+
+}
+
+#vids
+{
+	margin-bottom: 2%;
+}
+
+#vids iframe{
+    max-width: 50%;
+    margin-left: 25%;
+    border-radius: 10px;
+}
+
+#footer img
+{
+	filter: opacity(30%);
+	width: 6%;
+	height: 6%;
+	margin-left: 47%;
+	padding-bottom: 3%;
+	margin-top: 3%;
+}
+
+#footer img:hover
+{
+	filter: opacity(100%);
+}
