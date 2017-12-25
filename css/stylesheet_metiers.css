@@ -1,0 +1,45 @@
+#contenu
+{
+    text-indent: 45px;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 2%;
+    font-size: 20px;
+    position: relative;
+}
+
+#mosaique {
+    margin-top: 15%;
+}
+
+.case {
+    width: 45%;
+    position: relative;
+    margin: 2%;
+    float: left;
+}
+
+#mosaique .case img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#mosaique .case a:hover img {
+    filter: brightness(50%);
+}
+
+#mosaique .case span {
+    display: none;
+}
+
+#mosaique .case a:hover + span {
+    display: block;
+    position: absolute;
+    top: 47%;
+    left: 5%;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+}
