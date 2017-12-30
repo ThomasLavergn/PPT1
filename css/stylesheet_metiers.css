@@ -10,30 +10,34 @@
 }
 
 #mosaique {
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .case {
-    width: 45%;
+    max-width: 34%;
     position: relative;
-    margin: 2%;
-    float: left;
+    margin-top: 5%;
+    margin-left: 29%;
 }
 
 #mosaique .case img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 50%  ;
+}
+#mosaique div + div {
+    float: left;
+    margin-left: 8%;
 }
 
-#mosaique .case a:hover img {
+#mosaique .case a:hover img, .case_d a:hover img{
     filter: brightness(50%);
 }
 
-#mosaique .case span {
+#mosaique .case span, .case_d span {
     display: none;
 }
 
-#mosaique .case a:hover + span {
+#mosaique .case a:hover + span, .case_d a:hover + span {
     display: block;
     position: absolute;
     top: 47%;

@@ -54,6 +54,16 @@ body
     border-bottom: 2px solid gray;
 }
 
+#contenu
+{
+	background-color: white;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 2%;
+	font-size: 20px;
+	position: relative;
+}
+
 
 #menu li a {
     display:block;
@@ -99,14 +109,33 @@ body
 #footer img
 {
 	filter: opacity(30%);
-	width: 6%;
-	height: 6%;
-	margin-left: 47%;
-	padding-bottom: 3%;
-	margin-top: 3%;
+	max-width: 6%;
+	max-height: 100%;
+	position: fixed;
+	right: 2%;
+	bottom: 2%;
 }
 
 #footer img:hover
 {
 	filter: opacity(100%);
+}
+#download {
+	text-align: center;
+}
+.button {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: gray;
+	border-radius: 10px;
+	padding: 1%;
+	text-decoration: none;
+}
+
+.button:hover{
+	color: gray;
+	background-color: white;
+	border: 1px solid gray;
+	box-shadow: 1px 1px 5px 5px gray;
 }
