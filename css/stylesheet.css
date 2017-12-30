@@ -2,10 +2,7 @@ body
 {
 	margin:0;
 }
-@font-face {
-	font-family: "MyFont";
-	src: url('./font/traveling_typewriter/TravelingTypewriter.ttf');
-}
+
 
 #top img
 {
@@ -19,17 +16,77 @@ body
 	color: white;
 }
 
-#top h1
+#titre
 {
 	position: absolute;
+	width: 50%;
 	top: 500px;
-	left : 20%;
-	font-size: 3em;
+	left: 25%;
+	display: block;
+}
+
+#titre h1{
+	font-size:28px;
+	text-align: center;
 	text-shadow: 2px 4px black;
 }
 
-#menu
-{
+/* Menu petit écran*/
+
+#menu_phone {
+	display: none;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+}
+
+#menu_phone ul li ul {
+	display: none;
+}
+
+#menu_phone img {
+	max-width:15%;
+	height: 100%;
+}
+
+#menu_phone ul > li {
+	background-color: transparent;
+}
+
+#menu_phone ul li:hover > ul  {
+	display: block;
+}
+
+#menu_phone a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#menu_phone li {
+	background-color: gray;
+	color: #FFFFFF;
+	list-style: none;
+	margin-top: 1%;
+	padding: 2%;
+	border-radius: 5px;
+	display: block;
+
+}
+
+#menu_phone ul li ul li ul  {
+	display:none;
+}
+
+#menu_phone ul li ul li:hover ul {
+	display:block;
+	border-bottom: none;
+}
+
+/* Menu écran normal */
+
+#menu {
 	position: absolute;
 	width:35%;
 	top:40px;
@@ -43,6 +100,7 @@ body
     list-style-type:none;
     text-align:center;
 }
+
 #menu li {
     font-size: 23px;
     list-style-type:none;
@@ -50,20 +108,10 @@ body
     margin:1%;
     padding:0;
 }
+
 #menu li :hover{
     border-bottom: 2px solid gray;
 }
-
-#contenu
-{
-	background-color: white;
-	margin-left: 15%;
-	margin-right: 15%;
-	padding: 2%;
-	font-size: 20px;
-	position: relative;
-}
-
 
 #menu li a {
     display:block;
@@ -73,7 +121,6 @@ body
     padding:5px;
 }
 
-
 #menu ul li ul {
     display:none;
 }
@@ -82,6 +129,7 @@ body
     display:block;
     border-bottom: none;
 }
+
 #menu li:hover ul li {
     float:none;
 }
@@ -93,6 +141,16 @@ body
 #menu ul li ul li {
     font-size: 18px;
 
+}
+
+#contenu
+{
+	background-color: white;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 2%;
+	font-size: 20px;
+	position: relative;
 }
 
 #vids
@@ -120,9 +178,13 @@ body
 {
 	filter: opacity(100%);
 }
+
+/* Bouton de download */
+
 #download {
 	text-align: center;
 }
+
 .button {
 	color: white;
 	font-weight: bold;
@@ -138,4 +200,19 @@ body
 	background-color: white;
 	border: 1px solid gray;
 	box-shadow: 1px 1px 5px 5px gray;
+}
+
+@media screen and (max-width: 1000px) {
+	#menu  {
+	display: none;
+	}
+
+	#menu_phone {
+		display: block;
+	}
+
+	#text1 {
+		max-width: 50%;
+	}
+
 }
