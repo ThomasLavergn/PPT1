@@ -1,31 +1,23 @@
-#contenu
-{
-	text-indent: 45px;
-	background-color: white;
-	margin-left: 15%;
-	margin-right: 15%;
-	padding: 2%;
-	font-size: 20px;
-	position: relative;
+#contenu {
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 2%;
+    font-size: 20px;
+    position: relative;
 }
 
-
-#contenu .intro
-{
-	font-style: italic;
-	font-size: 22px;
+#contenu .intro {
+    font-style: italic;
+    font-size: 22px;
 }
 
-#contenu img
-{
-	width: 50%;
-	padding-bottom: 2%;
+#contenu img {
+    width: 50%;
+    padding-bottom: 2%;
 }
 
-#contenu li{
-	margin-top: 1%;
+#contenu li {
+    margin-top: 1%;
 }
 
-h3{
-	text-align: center;
-}
