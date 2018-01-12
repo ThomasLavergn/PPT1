@@ -34,3 +34,6 @@ body
 #contenu li{
 	margin-top: 1%;
 }
+ul {
+	font-style: italic;
+}
