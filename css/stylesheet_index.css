@@ -46,7 +46,7 @@ p:last-child {
 #mosaique .case a {
     display: block;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
 
     .case {
         float: none;
