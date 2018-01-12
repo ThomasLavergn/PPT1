@@ -26,7 +26,7 @@ body
 }
 
 #titre h1{
-	font-size:28px;
+	font-size: 34px;
 	text-align: center;
 	text-shadow: 2px 4px black;
 }
@@ -88,9 +88,9 @@ body
 
 #menu {
 	position: absolute;
-	width:35%;
+	width:50%;
 	top:40px;
-	left : 65%;
+	left : 5%;
 	text-decoration: none;
 }
 
@@ -102,7 +102,7 @@ body
 }
 
 #menu li {
-    font-size: 23px;
+    font-size: 29px;
     list-style-type:none;
     float:left;
     margin:1%;
@@ -139,7 +139,7 @@ body
 }
 
 #menu ul li ul li {
-    font-size: 18px;
+    font-size: 24px;
 
 }
 
@@ -148,7 +148,7 @@ body
 	background-color: white;
 	margin-left: 15%;
 	margin-right: 15%;
-	padding: 2%;
+	padding: 2% 2% 5% 2%;
 	font-size: 20px;
 	position: relative;
 }
@@ -183,6 +183,8 @@ body
 
 #download {
 	text-align: center;
+	margin-top:3%;
+	padding-bottom: 2%;
 }
 
 .button {
@@ -202,7 +204,7 @@ body
 	box-shadow: 1px 1px 5px 5px gray;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1250px) {
 	#menu  {
 	display: none;
 	}
@@ -213,6 +215,52 @@ body
 
 	#text1 {
 		max-width: 50%;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	#menu  {
+		display: none;
+	}
+
+	#menu_phone {
+		display: block;
+	}
+
+	#text1 {
+		max-width: 50%;
+		color: black;
+	}
+
+	#top > img{
+		display: none;
+	}
+
+	#contenu {
+		position: absolute;
+		top: 55%;
+	}
+
+	#menu_phone a {
+		color: black;
+	}
+
+	#menu_phone {
+		background-color:grey;
+	}
+
+	#menu_phone:hover + #titre {
+		display: none;
+	}
+
+	#titre {
+		top: 30%;
+	}
+
+	#titre h1 {
+		text-shadow:none;
+		color: black;
 	}
 
 }

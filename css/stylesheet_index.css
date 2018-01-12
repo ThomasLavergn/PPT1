@@ -26,6 +26,7 @@ p:last-child {
 #mosaique .case div {
     display: none;
 }
+
 .description {
     max-width: 50%;
     margin-left: 25%;
@@ -33,7 +34,7 @@ p:last-child {
     text-align: center;
 }
 
-#mosaique .case a:hover +.description {
+#mosaique .case a:hover + .description {
     display: block;
     position: absolute;
     left: 0;
@@ -41,4 +42,26 @@ p:last-child {
     color: #FFFFFF;
     font-weight: bold;
     font-size: 24px;
+}
+#mosaique .case a {
+    display: block;
+}
+@media screen and (max-width: 450px) {
+
+    .case {
+        float: none;
+        max-width: 50%;
+        margin-left: 25%;
+    }
+
+    #mosaique .case a:hover + .description {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
 }
