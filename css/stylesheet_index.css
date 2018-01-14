@@ -43,9 +43,15 @@ p:last-child {
     font-weight: bold;
     font-size: 24px;
 }
+
 #mosaique .case a {
     display: block;
 }
+
+#footer {
+    margin-top: 50%;
+}
+
 @media screen and (max-width: 700px) {
 
     .case {

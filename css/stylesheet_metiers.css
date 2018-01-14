@@ -29,15 +29,15 @@
     margin-left: 8%;
 }
 
-#mosaique .case a:hover img, .case_d a:hover img{
+#mosaique .case a:hover img{
     filter: brightness(50%);
 }
 
-#mosaique .case span, .case_d span {
+#mosaique .case span {
     display: none;
 }
 
-#mosaique .case a:hover + span, .case_d a:hover + span {
+#mosaique .case a:hover + span{
     display: block;
     position: absolute;
     top: 47%;
@@ -46,4 +46,43 @@
     color: #FFFFFF;
     font-weight: bold;
     font-size: 24px;
+}
+
+#footer {
+    margin-top: 30%;
+}
+
+@media screen and (max-width: 700px) {
+
+    .case {
+        float: none;
+        max-width: 70%;
+        margin-left:0;
+    }
+    #mosaique div + div {
+        margin: 0;
+    }
+
+    #mosaique .case a:hover + .description {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    #mosaique .case img {
+        max-width: 100%;
+        border-radius: 0px;
+        margin-bottom: 5%;
+    }
+
+    #contenu{
+        position: absolute;
+        top: 60%;
+    }
+
+
 }
