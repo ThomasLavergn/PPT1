@@ -34,3 +34,8 @@ body
 #contenu li{
 	margin-top: 1%;
 }
+
+#pdp {
+	width:120px; 
+	height: 120px; 
+}
